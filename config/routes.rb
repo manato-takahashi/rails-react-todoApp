@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "tasks" => "tasks#index"
   post "tasks" => "tasks#create"
+  delete "tasks/:id" => "tasks#destroy"
 
   # Defines the root path route ("/")
   # root "posts#index"
